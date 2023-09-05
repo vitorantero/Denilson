@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/estilo.css">
+        <link rel="shortcut icon" type="imagex/png" href="./img/icone.ico">
+        <title>A.M. Ferramentaria e Estamparia LTDA</title>
+    </head>
+    <body>
+        <header class="header flex">
+            <div class="container flex">
+                <div class="logo-box flex">
+                    <img src="/img/logoTranparente.png" alt="logo">
+                </div>
+                <div class="menu-box">
+                    <nav>
+                        <ul class="menu flex">
+                            <li class="menu-btn">Sobre</li>
+                            <li class="menu-btn">
+                                <a href="https://wa.me/5511954858431" target="_blank">Contato</a>
+                            </li>
+                            <li class="menu-btn">Produtos</li>
+                            <li class="menu-btn">Localização</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="box-logo flex">
+            <div class="opacity flex">
+                <div class="container flex">
+                    <img src="/img/logoCompletoTransparente.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+        
+        <!-- SOBRE A EMPRESA -->
+        <main class="main">
+            <section class="descricao flex">
+                <h2>Seja bem-vindo</h2>
+                <div class="container flex">
+                    <div class="toogle">
+                        <p>Nós da A.M Ferramentaria e Estamparia LTDA, somos especialistas em criar e produzir projetos 2D e 3D de ferramentas, fabricar peças diversas, realizar estampagem de peças metálicas e executar cortes e dobras em chapas metálicas.
+
+                            Nossos valores são impulsionados pelo compromisso com a excelência, que permeia cada aspecto de nosso trabalho. Se você busca precisão, criatividade e qualidade inigualável, encontrou o parceiro certo. Venha nos conhecer e descubra como podemos transformar suas ideias em projetos que superam todas as expectativas.
+                        </p>
+                    </div>
+                    <div class="toogle">
+                        <img src="/img/fabrica.png" alt="fabrica">    
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="projetos flex">
+                <h2>PROJETOS E SOLUÇÕES</h2>
+                <h4>Projeto 3D</h4>
+                <div class="container flex"> 
+                    <div class="toogle">
+                        <div class="slider">
+                            <input class="btn-manual" type="radio" name="btn-manual" id="radio1">
+                            <input class="btn-manual" type="radio" name="btn-manual" id="radio2">
+                            <div class="slides">
+                                
+                                <div class="slide">
+                                    <img src="/img/Projeto  em 3d.png" alt="Projeto 3D">
+                                </div>
+                                <div class="slide">
+                                    <img src="/img/Projetos em 2d.png" alt="Projeto 2D">
+                                </div>
+                            </div>
+                            <div class="box-label">
+                                <label class="label-manual" for="radio1"></label>
+                                <label class="label-manual" for="radio2"></label>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="toogle">
+                        <p>Nossos projetos em 3D são a porta de entrada para a concretização de suas visões. Com maestria técnica e atenção aos detalhes, criamos representações tridimensionais que combinam precisão e estilo. Dos conceitos à materialização, nossos projetos destacam-se pela sua precisão técnica e design envolvente. Valorizamos a estética, garantindo que cada ferramenta seja uma obra-prima funcional. Se você busca soluções de ferramentas que unem alta precisão com elegância notável, nossos projetos 3D são a resposta. Combinando tecnologia de ponta com criatividade, oferecemos as ferramentas para alcançar o sucesso.
+                        </p>
+                        <p>Nossos projetos 2D são a base da criação de ferramentas altamente precisas. Usando tecnologia avançada, produzimos representações gráficas detalhadas e eficazes. Do conceito à funcionalidade, nossos projetos destacam-se pela precisão técnica. Valorizamos a estética, criando ferramentas de qualidade e design notável. Se busca soluções de ferramentas de alta precisão, nossos projetos 2D são a resposta. Combinando ciência e arte, oferecemos as ferramentas para o sucesso.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="galeria flex">
+                <h2>Peças estampadas</h2>
+
+                <div class="container flex">
+                    
+                    <div class="box-slider flex">
+
+                        <div class="slider">
+                            
+
+                            <input class="btn-manual" type="radio" name="btn-manual2" id="radio3">
+                            <input class="btn-manual" type="radio" name="btn-manual2" id="radio4">
+                            <input class="btn-manual" type="radio" name="btn-manual2" id="radio5">
+                            <input class="btn-manual" type="radio" name="btn-manual2" id="radio6">
+
+                            <div class="slides">
+
+                                <div class="slide">
+                                    <img src="/img/Peça estampada 2 .png" alt="fabrica">
+                                </div>
+                                <div class="slide">
+                                    <img src="/img/Peça estampada.png" alt="fabrica">
+                                </div>
+                                <div class="slide">
+                                    <img src="/img/Pecas estamapadas 2.png" alt="fabrica">
+                                </div>
+                                <div class="slide">
+                                    <img src="/img/Corte e dobra 2.png" alt="fabrica">
+                                </div>
+
+                            </div>
+                            <div class="box-label">
+                                <label class="label-manual" for="radio3"></label>
+                                <label class="label-manual" for="radio4"></label>
+                                <label class="label-manual" for="radio5"></label>
+                                <label class="label-manual" for="radio6"></label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        
+        </main>
+
+        <footer class="footer flex">
+            <div class="container flex">
+                <div class="social flex">
+                    <h2>comentarios</h2>
+                </div>
+                <div class="bottom">
+
+                </div>
+            </div>
+        </footer>
+
+        
+
+        <script src="/javascript/js.js"></script>
+    </body>
+</html>
