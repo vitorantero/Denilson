@@ -1,0 +1,428 @@
+/*----- ANIMAÇÕES -----*/
+@keyframes show{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes recolherDireita {
+    
+}
+/*---------------*/
+
+/* ------variaveis------ */
+:root{
+    --logo1-color: #22d9dc;
+    --logo2-color: #5e7cec;
+    --topo-altura: 5rem;
+}
+/* ---------------- */
+/* ----- correção ----- */
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color:#fff; */
+}
+/* -------------------- */
+body{
+    /* background-color: #989898; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 300rem; */
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    
+    max-width: 70rem;
+    min-width: 30rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.header{
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+
+    width: 100%;
+    height: var(--topo-altura);
+    background-color: #000;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box{
+    flex: 1;
+    align-items: center;
+    width: 8rem;
+    height: 5rem;
+}
+.logo-box>img{
+    width: 4rem;
+    height: 3rem;
+}
+
+.menu-box{
+    flex: 1;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+    color: var(--logo1-color);
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.menu-btn:hover{
+    transition: all .5s;
+    transform: scale(1.2);
+    cursor: pointer;
+    /* color: #727272; */
+    color: #fff;
+}
+
+.box-logo{
+    margin-top: var(--topo-altura);
+
+    width: 100%;
+    height: 32rem;
+    background-image: url(/img/fabrica2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* -webkit-backdrop-filter: blur(5px); */
+    backdrop-filter: brightness(30%);
+    /* -webkit-backdrop-filter: brightness(10%); */
+}
+
+.opacity{
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+}
+.opacity .container{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.opacity .container img{
+    opacity: 0;
+    animation: show 2s forwards;
+}
+
+main{
+    
+}
+
+.descricao, .projetos, .galeria{
+    /* border: 1px solid; */
+
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2rem;   */
+    /* border-top: #000 solid 3rem; */
+    /* border-right: #000 solid 3rem; */
+}
+.projetos .container{
+    border-left: #000 solid 3rem;
+}
+
+.descricao .container, .galeria .container{
+    border-right: #000 solid 3rem;
+}
+
+.toogle{
+    padding: 2rem;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+
+    font-size: 1.3rem;
+    width: 40rem;
+    height: 25rem;
+}
+
+.toogle img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.toogle p {
+    justify-content: start;
+    transition: 1s;
+    text-align: justify;
+}
+
+.projetos{
+    border-right: none;
+    /* border-left: #000 solid 3rem; */
+}
+
+.projetos .toogle:has(p){
+
+    /* border: 1px solid; */
+    transition: 1s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.projetos h4{
+    margin-top: 1rem;
+}
+
+
+.projetos .toogle p{
+    margin-top: 2.35rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+
+.projetos .toogle p:last-child{
+    opacity: 0;
+}
+
+/* 
+.teste{
+    width: 40rem;
+    height: 25rem;
+} */
+
+.slider{
+    /* border: 1px solid; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projetos .slides{
+    border-radius: .5rem;
+}
+
+.abs{
+    user-select: none;
+    position: absolute;
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    background-color: #ffffff83;
+    transition: .8s;
+
+}
+
+.abs:hover{
+    background-color: #fff;
+}
+/* #setaAntes{
+    transform: rotate(180deg);
+    top: 10rem;
+    left: .3rem;
+}
+#setaDepois{
+    top: 10rem;
+    right: .3rem;
+} */
+
+.slides{
+    width: 200%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slides .slide{
+    width: 50%;
+}
+
+.slides .slide img{
+    width: 100%;
+}
+
+.projetos .btn-manual{
+    display: none;
+}
+
+.projetos .toogle .box-label , .galeria .box-label{
+    /* z-index: 10000; */
+    /* border: 1px solid; */
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label-manual{
+    padding: 5px;
+    border: 1px solid #fff;
+    background-color: #939393aa;
+    border-radius: 100%;
+    transition: .5s;
+}
+
+.label-manual:hover{
+    background-color: #474747;
+}
+
+.label-manual:not(:last-child){
+    margin-right: .5rem ;
+
+}
+
+#radio1:checked ~ .slides{
+    margin-left: 0%;
+}
+#radio1:checked ~ .box-label label[for='radio1']{
+    background-color: #1d1d1d;
+}
+#radio2:checked ~ .box-label label[for='radio2']{
+    background-color: #1d1d1d;
+}
+
+#radio2:checked ~ .slides{
+    margin-left: -100%;
+}
+
+
+.galeria{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 25rem;
+}
+
+.galeria .btn-manual{
+    display: none;
+}
+
+.galeria .box-slider{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.galeria .slider{
+    width: 50%;
+    height: 20rem;
+    border-radius: .5rem;
+}
+
+.galeria .slides{
+    width: 400%;
+    height: 100%;
+}
+
+.galeria .slide{
+    width: 25%;
+    height: 25rem;
+}
+.galeria .slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.galeria .box-label{
+    bottom: 1rem !important;
+}
+
+#radio3:checked ~ .slides{
+    margin-left: 0%;
+}
+#radio4:checked ~ .slides{
+    margin-left: -100%;
+}
+#radio5:checked ~ .slides{
+    margin-left: -200%;
+}
+#radio6:checked ~ .slides{
+    margin-left: -300%;
+}
+
+#radio3:checked ~ .box-label label[for='radio3']{
+    background-color: #1d1d1d;
+}
+#radio4:checked ~ .box-label label[for='radio4']{
+    background-color: #1d1d1d;
+}
+#radio5:checked ~ .box-label label[for='radio5']{
+    background-color: #1d1d1d;
+}
+#radio6:checked ~ .box-label label[for='radio6']{
+    background-color: #1d1d1d;
+}
+
+
+footer{
+    margin-top: 3rem;
+    width: 70rem;
+
+    & .container{
+        flex-direction: column;
+    }
+}
+
+.social{
+    width: 100% ;
+    height: 25rem;
+    background-color: #484848;
+}
+
+.bottom{
+    width: 100% ;
+    height: 5rem;
+    background-color: #5e7cec;
+}
+
+.social, .bottom{
+    justify-content: center;
+    align-items: start;
+}
